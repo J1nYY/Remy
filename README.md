@@ -42,7 +42,7 @@ Ai 로봇 개발자 교육 2025.10.
 
 ## 📦 데이터 수집 및 전처리
 
-(assets/architecture.png)
+! [Data preprocess] (assets/architecture.png)
 ---
 ## 🧠 시스템 동작 흐름
 
