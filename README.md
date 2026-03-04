@@ -52,6 +52,8 @@ Ai 로봇 개발자 교육 2025.10.
 
 ## 🏗️ 아키텍처
 
+![REMY Architecture](assets/architecture.png)
+
 ---
 
 ## ⚡ 성능 최적화 / 트러블슈팅
