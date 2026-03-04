@@ -71,7 +71,7 @@ Ai 로봇 개발자 교육 2025.10.
 ### ✅ 온디바이스 Yolo 추론 지연 문제
 - 초기: 라즈베리파이에서 추론 시 지연/프레임 저하로 실시간 사용 어려움
 - 개선: **NCNN 적용**으로 임베디드 환경에 맞게 변환/최적화하여 **실시간 동작 확보**
-![model optimize](assets/model optimize.png)
+![model optimize](assets/model_optimize.png)
 ### ✅ 오디오 출력으로 인한 프레임 드랍
 - 문제: `sounddevice.sd.play()`를 프레임마다 호출하면서 오버헤드 발생 → 웹캠 멈춤/프레임 드랍
 - 개선: **스트림 + 콜백 방식**으로 변경하여 안정화
