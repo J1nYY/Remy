@@ -53,20 +53,6 @@ Ai 로봇 개발자 교육 2025.10.
 
 ## 🏗️ 아키텍처
 
-```text
-[Camera(UVC)]
-     |
-     v
-[Detection/Inference] -----> [Logic: bbox + index-finger based guidance]
-     |                                   |
-     v                                   v
-[Warning 판단]                        [Direction/Reach 판단]
-     |                                   |
-     +-------------> GPIO(LED) <----------+
-     |
-     +-------------> Audio(Speaker)
-     |
-     +<------------- Button Input
 ---
 
 ## ⚡ 성능 최적화 / 트러블슈팅
