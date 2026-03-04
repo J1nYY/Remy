@@ -28,23 +28,21 @@ Ai 로봇 개발자 교육 2025.10.
 ### 1) 위험 객체 감지 & 안전 파지 안내
 - **칼날/손잡이 분리 인식**
 - 손이 위험 구역(칼날)에 접근하면 즉시 경고
+![fuction](assets/fuction1.png)
 
 ### 2) 목표 도구 선택 & 방향 안내 (LED)
 - 버튼으로 목표 도구(예: 국자/포크 등) 선택
 - **검지 끝 랜드마크** 기준으로 목표까지의 상대 위치를 계산해 **8방향 LED**로 유도
-
+![fuction](assets/fuction2_1.png)
+![fuction](assets/fuction2_2.png)
 ### 3) 위험/도달 알림 (오디오 + LED)
 - 위험 접근 시: **중앙 LED + 경고음**
 - 목표 도달 시: **전체(9개) LED + 확인음**
 - 이동 중 위험(칼날)이 경로에 있어도 **안내는 지속하면서 경고는 유지**
+![fuction](assets/fuction3_1.png)
 
 ---
 
-## 📦 데이터 수집 및 전처리
-
-![Data preprocess](assets/data1_1.png)
-
----
 ## 🧠 시스템 동작 흐름
 
 1. 카메라 입력(UVC) 수신  
@@ -61,16 +59,23 @@ Ai 로봇 개발자 교육 2025.10.
 
 ---
 
+## 📦 데이터 수집 및 전처리
+
+![Data preprocess](assets/data1_1.png)
+![Data preprocess](assets/data1_2.png)
+![Data preprocess](assets/data1_3.png)
+
+---
 ## ⚡ 성능 최적화 / 트러블슈팅
 
 ### ✅ 온디바이스 Yolo 추론 지연 문제
 - 초기: 라즈베리파이에서 추론 시 지연/프레임 저하로 실시간 사용 어려움
 - 개선: **NCNN 적용**으로 임베디드 환경에 맞게 변환/최적화하여 **실시간 동작 확보**
-
+![model optimize](assets/model optimize.png)
 ### ✅ 오디오 출력으로 인한 프레임 드랍
 - 문제: `sounddevice.sd.play()`를 프레임마다 호출하면서 오버헤드 발생 → 웹캠 멈춤/프레임 드랍
 - 개선: **스트림 + 콜백 방식**으로 변경하여 안정화
-
+![speaker](assets/speaker.png)
 
 ## 🧰 기술 스택
 
